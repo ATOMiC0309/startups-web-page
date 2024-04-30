@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<!-- Blog Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-8">
+                <!-- Blog Detail Start -->
+                <div class="mb-5">
+                    {% if startup.image %}
+                    <img class="img-fluid w-100 rounded mb-5" src="{{ startup.image.url }}" alt="">
+                    {% else %}
+                    <img class="img-fluid w-100 rounded mb-5" src="https://media.istockphoto.com/id/1055079680/vector/black-linear-photo-camera-like-no-image-available.jpg?s=612x612&w=0&k=20&c=P1DebpeMIAtXj_ZbVsKVvg-duuL0v9DlrOZUvPG6UJk=" alt="">
+                    {% endif %}
+                    <h1 class="mb-4">Diam dolor est labore duo ipsum clita sed et lorem tempor duo</h1>
+                    <p>
+                        {{ startup.content }}
+                    </p>
+                </div>
+                <!-- Blog Detail End -->
+
+
+            </div>
+
+            <!-- Sidebar Start -->
+            <div class="col-lg-4">
+                <!-- Search Form Start -->
+                <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
+                    <div class="input-group">
+                        <input type="text" class="form-control p-3" placeholder="Keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+                <!-- Search Form End -->
+
+
+
+                <!-- Tags Start -->
+                <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
+                    <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                        <h3 class="mb-0">Tag Cloud</h3>
+                    </div>
+                    <div class="d-flex flex-wrap m-n1">
+                        <a href="" class="btn btn-light m-1">Design</a>
+                        <a href="" class="btn btn-light m-1">Development</a>
+                        <a href="" class="btn btn-light m-1">Marketing</a>
+                        <a href="" class="btn btn-light m-1">SEO</a>
+                        <a href="" class="btn btn-light m-1">Writing</a>
+                        <a href="" class="btn btn-light m-1">Consulting</a>
+                        <a href="" class="btn btn-light m-1">Design</a>
+                        <a href="" class="btn btn-light m-1">Development</a>
+                        <a href="" class="btn btn-light m-1">Marketing</a>
+                        <a href="" class="btn btn-light m-1">SEO</a>
+                        <a href="" class="btn btn-light m-1">Writing</a>
+                        <a href="" class="btn btn-light m-1">Consulting</a>
+                    </div>
+                </div>
+                <!-- Tags End -->
+
+            </div>
+            <!-- Sidebar End -->
+        </div>
+    </div>
+</div>
+<!-- Blog End -->
+{% endblock main %}
